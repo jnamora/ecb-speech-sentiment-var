@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif; /* Academic standard font */
+            margin: 0;
+            padding: 0;
+            background-color: transparent;
+            width: 510pt;
+            margin: 0 auto;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 0 auto;
+            background-color: transparent;
+        }
+        th {
+            background-color: transparent;
+            border-top: 3px solid #888;
+            border-bottom: 2px solid #888;
+            border-left: none;
+            border-right: none;
+            padding: 8px 12px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 11pt;
+        }
+        td {
+            border-top: none;
+            border-bottom: 0px solid #888;
+            border-left: none;
+            border-right: none;
+            padding: 8px 12px;
+            font-size: 10pt;
+            vertical-align: top;
+        }
+        td.center-cell {
+            text-align: center;
+            vertical-align: middle;
+        }
+        .result-container {
+            width: 100%;
+            max-width: 510pt;
+            margin: 0;
+            padding: 0;
+            background-color: transparent;
+        }
+        .legend {
+            border-top: 3px solid #888;
+            margin-top: 4px;
+            padding-top: 4px;
+            padding-bottom: 8px;
+            display: block;
+            font-size: 9pt;
+            text-align: center;
+        }
+        .legend-item {
+            display: inline-block;
+            margin-right: 15px;
+        }
+        .color-box {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border: 1px solid #555;
+            margin-right: 3px;
+            vertical-align: middle;
+        }
+        .negative {
+            background-color: hsl(0, 90%, 60%);
+        }
+        .neutral {
+            background-color: hsl(0, 0%, 100%);
+        }
+        .positive {
+            background-color: hsl(120, 90%, 50%);
+        }
+        mark {
+            line-height: 1.5;
+            padding: 0 2px;
+            margin: 0;
+            display: inline-block;
+            border-radius: 2px;
+        }
+        .text-column {
+            max-width: 550px;
+            line-height: 1.3;
+            text-align: justify; /* Justify text */
+        }
+        caption {
+            caption-side: top;
+            text-align: center;
+            padding: 6px 0;
+            font-weight: bold;
+            font-size: 11pt;
+        }
+        /* New style for word spacing */
+        .word-container {
+            display: inline;
+            white-space: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <table>
+            <tr>
+                <th>Prediction</th>
+                <th>Word Importance</th>
+            </tr>
+            <tr>
+                <td class="center-cell"><b>Positive (0.79)</b></td>
+                <td class="text-column">
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 98%);">For</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 97%);">consumption,</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(0, 75%, 98%);">one</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 98%);">useful</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 98%);">indicator</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(0, 75%, 99%);">is</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 98%);">the</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(0, 75%, 97%);">gap</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(0, 75%, 99%);">between</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 98%);">essential</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 97%);">purchases,</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 99%);">such</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 99%);">as</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 98%);">food</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 100%);">and</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 100%);">rent,</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 100%);">and</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(0, 75%, 100%);">non-essential</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 100%);">ones,</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(0, 75%, 100%);">such</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 100%);">as</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 99%);">electrical</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 98%);">goods</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 100%);">and</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 98%);">holidays.</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 100%);">Non-essential</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 97%);">purchases,</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 99%);">which</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(0, 75%, 100%);">make</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 98%);">up</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 99%);">around</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 99%);">50%</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 100%);">of</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 96%);">household</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 97%);">spending</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 100%);">in</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(0, 75%, 100%);">the</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 95%);">euro</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 98%);">area,</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(0, 75%, 98%);">tend</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(0, 75%, 99%);">to</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 98%);">be</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(0, 75%, 91%);">postponed</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(0, 75%, 99%);">during</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(0, 75%, 99%);">recessions</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 100%);">and</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 98%);">then</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(0, 75%, 98%);">to</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(0, 75%, 99%);">catch</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 98%);">up</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(0, 75%, 93%);">as</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 98%);">the</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(0, 75%, 99%);">business</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 98%);">cycle</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 88%);">advances.</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(0, 75%, 97%);">Such</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(0, 75%, 100%);">purchases</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(0, 75%, 99%);">are</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 99%);">currently</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(0, 75%, 87%);">only</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(0, 75%, 97%);">2%</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 85%);">above</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 100%);">their</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 93%);">pre-crisis</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 95%);">level,</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 94%);">compared</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(0, 75%, 96%);">with</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(0, 75%, 100%);">9%</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 99%);">for</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(0, 75%, 100%);">essential</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(0, 75%, 100%);">ones.</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 97%);">This</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(0, 75%, 100%);">implies</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(0, 75%, 98%);">that</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(0, 75%, 99%);">discretionary</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(0, 75%, 96%);">household</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(0, 75%, 100%);">spending</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(0, 75%, 93%);">still</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 98%);">has</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(0, 75%, 97%);">scope</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 100%);">to</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 98%);">support</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(0, 75%, 100%);">the</mark></span>
+                    <span class="word-container"><mark style="background-color: hsl(120, 75%, 71%);">expansion.</mark></span>
+                </td>
+            </tr>
+        </table>
+        
+        <div class="legend">
+            <b>Legend: </b>
+            <span class="legend-item"><span class="color-box negative"></span> Negative</span>
+            <span class="legend-item"><span class="color-box neutral"></span> Neutral</span>
+            <span class="legend-item"><span class="color-box positive"></span> Positive</span>
+        </div>
+    </div>
+</body>
+</html>
