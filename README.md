@@ -10,4 +10,4 @@ This project examines how ECB communication sentiment functions as a monetary po
 
 
 # Explainable AI
-[Figure_1.pdf](https://github.com/user-attachments/files/19219285/Figure_1.pdf)
+![Model explainability visualization](images/Figure_1.png)
