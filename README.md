@@ -9,3 +9,5 @@ This project examines how ECB communication sentiment functions as a monetary po
 - OECD Main Economic Indicators: https://doi.org/10.1787/data-00052-en
 
 
+# Explainable AI
+[Figure_1.pdf](https://github.com/user-attachments/files/19219285/Figure_1.pdf)
